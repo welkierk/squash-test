@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt - WAWA Padel & Squash</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="logo">Squash</div>
+    <nav>
+      <ul>
+        <li><a href="about.html">O nas</a></li>
+        <li><a href="reservation.html">Rezerwacja</a></li>
+        <li><a href="contact.html" class="active">Kontakt</a></li>
+        <li><a href="gallery.html">Galeria</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="content">
+    <section>
+      <h1>Kontakt</h1>
+      <p><strong>Adres:</strong> ul. Sportowa 10, Warszawa</p>
+      <p><strong>Jak do nas trafić:</strong> Klub znajduje się w pobliżu stacji metra oraz przystanku autobusowego. Parking dostępny na miejscu.</p>
+      
+      <div id="map" style="height: 300px; margin-top: 20px;"></div>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Twoje imię" required>
+        <input type="email" placeholder="Twój email" required>
+        <textarea placeholder="Twoja wiadomość" rows="5" required></textarea>
+        <button type="submit" class="btn">Wyślij wiadomość</button>
+      </form>
+    </section>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
